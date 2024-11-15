@@ -7,11 +7,7 @@ from django.conf import settings
 from .models import PredictionResult
 import os
 from django.contrib.auth import logout
-from django.shortcuts import redirect
 
-from django.conf import settings
-from .forms import HealthPredictionForm
-from .models import PredictionResult
 from heart_disease_prediction.predictor import HealthPredictor
 
 def home(request):
@@ -130,11 +126,6 @@ def login_view(request):  #dont name "login" bcoz django already have build-in l
         form = AuthenticationForm()
     return render(request, 'users/login.html', {'form': form})
 
-
-# users/views.py
-from django.shortcuts import render, redirect
-from django.contrib.auth.decorators import login_required
-from .models import PredictionResult
 
 @login_required
 def dashboard_view(request):
