@@ -36,7 +36,7 @@ A machine learning-powered web application that predicts the likelihood of heart
 
 1. Clone the repository
 ```bash
-git clone [your-repository-link]
+git clone [[your-repository-link]](https://github.com/Santhoshkumar099/Heart_disease_Prediction/tree/master)
 cd heart-disease-prediction
 ```
 
